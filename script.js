@@ -31,6 +31,9 @@ document.querySelector('.anterior').addEventListener('click',() =>{
     if(indexMusica < 0){
         indexMusica = (musicas.length)-1;
     }
+    if( document.querySelector('.botao-play').style.display === 'none'){
+        musica.play(); 
+    }
     renderizarMusica(indexMusica);
 });
 
