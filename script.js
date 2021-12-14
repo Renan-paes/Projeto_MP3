@@ -31,10 +31,11 @@ document.querySelector('.anterior').addEventListener('click',() =>{
     if(indexMusica < 0){
         indexMusica = (musicas.length)-1;
     }
-    if( document.querySelector('.botao-play').style.display === 'none'){
-        musica.play(); 
-    }
     renderizarMusica(indexMusica);
+    musica.play()
+    document.querySelector('.botao-pause').style.display = 'block'
+    document.querySelector('.botao-play').style.display = 'none'
+
 });
 
 document.querySelector('.proxima').addEventListener('click',() =>{
@@ -47,9 +48,7 @@ document.querySelector('.proxima').addEventListener('click',() =>{
     document.querySelector('.botao-pause').style.display = 'block'
     document.querySelector('.botao-play').style.display = 'none'
 
-    if( document.querySelector('.botao-play').style.display === 'none'){
-        musica.play(); 
-    }
+    
     
 });
 
