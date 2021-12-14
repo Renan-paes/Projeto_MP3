@@ -1,23 +1,60 @@
-body,html{
+*{
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    box-sizing: border-box;
+}
+
+body{
     height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     background-image: linear-gradient(180deg, #7d4159 0, #773959 12.5%, #6f3159 25%, #652859 37.5%, #591f59 50%, #4b185a 62.5%, #3a135b 75%, #24125d 87.5%, #00125f 100%);
+     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+   
+}
+
+.container{  
     background-color: #333;
-    color: #ddd;
-    font-family: 'Montserrat',sans-serif;
+
+    height: 560px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    margin: 5px  0;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 4px 0px 50px 5px rgba(0,0,0,0.39); 
+box-shadow: inset 4px 0px 50px 5px rgba(0,0,0,0.39);
+
 }
 
 img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    border-radius: 8px;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, inset 0px 0px 12px -5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, inset 0px 0px 12px -5px rgba(0,0,0,0);
+    z-index: 0;
 }
 
+
+
 .descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 300px;
+    margin-top: 10px;
+    background-color: rgb(178, 178, 179);
+    border-radius: 8px;
+    padding: 10px 0;
+    -webkit-box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.74), inset 0px 0px 21px 0px rgba(0,0,0,0.69); 
+    box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.74), inset 0px 0px 21px 0px rgba(0,0,0,0.69);
 }
 
 h2{
@@ -29,9 +66,9 @@ h2{
 }
 .barra{
     width: 300px;
-    height: 6px;
-    border: 1px solid #eee;
-    border-radius: 5px;
+    height: 3px;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: flex-start ;
@@ -39,17 +76,18 @@ h2{
 }
 
 progress{
-    height: 6px;
+    height: 3px;
     width: 0%;
-    background-color:#333 ;
+    background-color:#fff ;
+    border-radius: 8px;
 }
 
 .ponto{
-    width: 20px;
-    height: 20px;
+    width: 7px;
+    height: 7px;
     background-color: #eee;
     border-radius: 50%;
-    margin-left: -10px;
+    margin-left: -4px;
     cursor: pointer;
 }
 
@@ -57,6 +95,8 @@ progress{
     display: flex;
     width: 300px;
     justify-content: space-between;
+    margin-top: 10px;
+    color: #fff;
 }
 
 .player {
@@ -68,15 +108,49 @@ progress{
 }
 
 .botao-play, .botao-pause {
-    font-size: 50px;
+    font-size: 46px;
     cursor: pointer;
+    color: white;
 }
 
 .setas {
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
+    color: white;
 }
 
 .botao-pause {
     display: none;
+    
+} 
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 40px 0 0;
+
+}
+
+
+.heart2{
+   
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 14px;
+    color: rgb(162, 6, 6);
+    
+}
+
+
+
+.dot{
+    color: wheat;
+    background-size: red;
+   
+}
+
+.end{
+    margin-top: 20px;
+    color: rgb(104, 103, 102);
 }
