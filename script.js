@@ -1,4 +1,5 @@
 let musicas = [
+    
     {titulo:'Tarde de outubro', artista:'CPM 22', src:'musicas/tardeDeOutubro.mp3',img:'imagens/cpm22.jpg'}, 
 
     {titulo:'Aerials', artista:'System of a down', src:'musicas/aerials.mp3',img:'imagens/system.jpg'},
@@ -51,6 +52,7 @@ document.querySelector('.proxima').addEventListener('click',() =>{
     
     
 });
+
 
 
 //Funções
